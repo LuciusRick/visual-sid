@@ -24,7 +24,7 @@ header > ul{
     gap: 10px;
 }
 
-header li{
+header li {
     text-decoration: none;
     list-style-type: none;
     font-weight: bolder;
@@ -33,6 +33,11 @@ header li{
 
 header li:hover{
     color: aqua;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
 }
 
 main{
@@ -45,14 +50,36 @@ main{
 }
 
 .service-links{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
     background-color: blue;
+    transition: 0.5s;
 }
 
 .service-links:hover{
-    background-color: white;
+    border: 5px solid white;
+    transition: 0.2s;
+}
+
+#toldos{
+    background: url(../img/toldo-fixo.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#retratil{
+    background: url(../img/toldo-retratil.png) no-repeat center center;
+    background-size: cover;
+}
+
+#adesivagem{
+    background: url(../img/adesivagem.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#luminosos{
+    background: url(../img/luminoso.jpeg) no-repeat center center;
+    background-size: cover;
 }
 
 @media  screen and (min-width:1080px) {
@@ -65,4 +92,13 @@ main{
     }
 
     
+}
+
+@media screen and (max-width:650px){
+    .service-links{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: blue;
+    }
 }
